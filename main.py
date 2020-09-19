@@ -1,6 +1,5 @@
 import json
-import stocks as st
-import file_services as fs
+from services import file_services as fs, stocks_services as st
 
 data = []
 tickers_data = []
