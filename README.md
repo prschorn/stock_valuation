@@ -1,7 +1,6 @@
 # stock_valuation
-Projeto com o intuito de analizar as empresas brasileiras para ajudar na análise fundamentalista
+This project has the intent to compile stocks data to help analyzing and taking better decisions on investments
 
 
 # V0.1
-
-Baixa as informações das empresas baseado no arquivo tickers.json e salva os dados no arquivo data.json agrupado por setor e ticker.
+Downloads ticker informations based on the file tickers.json and write them on the file data.json grouping by industry and ticker.
