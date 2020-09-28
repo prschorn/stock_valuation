@@ -11,14 +11,12 @@ for group in data:
     for industry in group:
         group_tickers = []
         for ticker in group[industry]:
-            ticker_data = {
-                ticker: st.get_ticker_data(ticker)
-            }
-            group_tickers.append(ticker_data)
-        industry_data = {
-            industry: group_tickers
-        }
-        tickers_data.append(industry_data)
+            ticker_info = st.get_ticker_data(ticker)
 
+            if ticker_info is not None:
+                group_tickers.append({ticker: ticker_info})
+
+        tickers_data.append({industry: group_tickers})
 fs.save_json(tickers_data, 'data.json')
+fs.generate_xlsx(tickers_data, 'data.xlsx')
 

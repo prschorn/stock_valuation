@@ -14,7 +14,9 @@ Downloads ticker informations based on the file tickers.json and write them on t
      
 # Project setup
 
-    - Create virtual env (Python 3)
+    - Create virtual env (Python 3) python3 -m venv env
+    - Activate venv: source env/bin/activate
     - pip install yfinance
     - pip install lxml
+    - pip install xlsxwriter
     
